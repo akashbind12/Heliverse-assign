@@ -59,30 +59,36 @@ export function User({ props, onClick, onclick, setEdit,setId}) {
           <Stack pt={10} align={'center'}>
             <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
               {/* {props.FirstName} */}
-              Name : {props.FirstName}  {props.LastName}
+              Name : {props.Name} 
             </Heading>
             <Stack direction={'row'} align={'center'}>
               <Text fontWeight={500} fontSize={'xl'}>
                 {/* {props.price} */}
-                age : {props.age}
+                Email : {props.Email}
               </Text>
             </Stack>
             <Stack direction={'row'} align={'center'}>
               <Text fontWeight={500} fontSize={'xl'}>
                 {/* {props.price} */}
-                Gender : {props.Gender}
+                Phone Number: {props.PhoneNumber}
               </Text>
             </Stack>
             <Stack direction={'row'} align={'center'}>
               <Text fontWeight={500} fontSize={'xl'}>
                 {/* {props.price} */}
-                Qualification : {props.Qualification}
+                Address : {props.Address}
               </Text>
             </Stack>
             <Stack direction={'row'} align={'center'}>
               <Text fontWeight={500} fontSize={'xl'}>
                 {/* {props.price} */}
-                Occupation : {props.Occupation}
+                Company : {props.Company}
+              </Text>
+            </Stack>
+            <Stack direction={'row'} align={'center'}>
+              <Text fontWeight={500} fontSize={'xl'}>
+                {/* {props.price} */}
+                Designation : {props.Designation}
               </Text>
             </Stack>
           </Stack>
