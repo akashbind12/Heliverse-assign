@@ -2,15 +2,15 @@
 const mongoose=require("mongoose")
 
 const UserSchema= new mongoose.Schema({
-    FirstName: { type: String, required: true },
-    LastName: { type: String, required: true },
-    age:{ type: String , required: true },
-    Gender: { type: String, required: true },
-    Qualification: { type: String, required: true },
-    Occupation:{type:String,required:true},
+    Name: { type: String, required: true },
+    Email: { type: String, required: true },
+    PhoneNumber:{ type: String , required: true },
+    Address: { type: String, required: true },
+    Company: { type: String, required: true },
+    Designation:{type:String,required:true},
 },{
     timestamps:true,
     versionKey:false
 })
 
-module.exports=mongoose.model("user",UserSchema)
+module.exports=mongoose.model("Users",UserSchema)

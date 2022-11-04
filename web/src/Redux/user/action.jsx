@@ -41,7 +41,7 @@ export const AddUser = (payload) => (dispatch)=> {
     dispatch(UserRequest())
   
     console.log("payload",payload)
-    axios.post('https://heliverse-assign.herokuapp.com/', payload)
+    axios.post('https://heliverse1.herokuapp.com/', payload)
       .then(function (response) {
           console.log("bag", response.data);
           toast.success('User added sucessfully', Tost);
@@ -56,7 +56,7 @@ export const AddUser = (payload) => (dispatch)=> {
 export const GetUser = (payload) => (dispatch)=> {
     dispatch(UserRequest())
   
-    axios.get('https://heliverse-assign.herokuapp.com/')
+    axios.get('https://heliverse1.herokuapp.com/')
       .then(function (response) {
           console.log(response.data);
           dispatch(UserSuccess(response.data))
@@ -71,7 +71,7 @@ export const DelteUser = (id) => (dispatch)=> {
     dispatch(UserRequest())
   
     
-    axios.delete(`https://heliverse-assign.herokuapp.com/${id}`)
+    axios.delete(`https://heliverse1.herokuapp.com/${id}`)
     .then(function (response) {
         console.log(response.data);
         toast.success('User removed sucessfully', Tost);
@@ -87,7 +87,7 @@ export const EditUser = (id,payload) => (dispatch) => {
     console.log(id,payload)
     dispatch(UserRequest())
 
-    axios.put(`https://heliverse-assign.herokuapp.com/${id}`, payload)
+    axios.put(`https://heliverse1.herokuapp.com/${id}`, payload)
     .then(function (response) {
         console.log(response.data);
         toast.success('User updated sucessfully', Tost);
