@@ -52,7 +52,7 @@ export const Dashboard = () => {
             <Box maxW='32rem' m="auto">
                 <Heading mb={4}>Dashboard</Heading>
                 <Text fontSize='xl'>
-                    Your products are listed below
+                    All Users are listed below
                 </Text>
                 <Button size='lg' colorScheme='green' mt='24px' onClick={() => {
                                 onOpen()
